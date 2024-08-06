@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "scripts": {
+    "======= build ====================================================================": "",
+    "lint": "tsc",
+    "build": "npx tsc --noEmit && nuxi build",
+    "build:docker": "nuxi build",
+    "======= run ====================================================================": "",
+    "watch": "NUXT_HOST=0.0.0.0 nuxt dev",
+    "codegen": "npx openapi-typescript http://localhost:8080/api-yaml --output sdk/backend.ts",
+    "======= test ====================================================================": "",
+    "test": "vitest",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "6.12.1",
+    "@openapitools/openapi-generator-cli": "2.13.4",
+    "@types/uuid": "10.0.0",
+    "nuxt": "3.12.4",
+    "openapi-typescript": "7.3.0",
+    "typescript": "5.5.4",
+    "vitest": "2.0.5"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "0.5.2",
+    "@swan-io/boxed": "2.3.0",
+    "axios": "1.7.3",
+    "body-scroll-lock": "4.0.0-beta.0",
+    "imp-vue3-beautiful-chat": "3.2.1",
+    "mini-toastr": "0.8.1",
+    "socket.io-client": "4.7.5",
+    "uuid": "10.0.0",
+    "vue-beautiful-chat": "2.5.0",
+    "vue-notifications": "1.0.2",
+    "vue-tabs-chrome": "0.10.0",
+    "vue3-beautiful-chat": "3.3.1"
+  }
+}

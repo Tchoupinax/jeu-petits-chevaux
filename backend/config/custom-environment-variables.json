@@ -1,0 +1,17 @@
+{
+  "http": {
+    "port": "PORT"
+  },
+  "websockets": {
+    "port": "WEBSOCKET_PORT"
+  },
+  "services": {
+    "postgres": {
+      "database": "POSTGRES_DATABASE",
+      "host": "POSTGRES_HOST",
+      "password": "POSTGRES_PASSWORD",
+      "port": "POSTGRES_PORT",
+      "username": "POSTGRES_USERNAME"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "http": {
+    "port": 8080
+  },
+  "websockets": {
+    "port": 8081
+  },
+  "services": {
+    "postgres": {
+      "database": "postgres",
+      "host": "localhost",
+      "password": "postgres",
+      "port": 5432,
+      "username": "postgres"
+    }
+  }
+}

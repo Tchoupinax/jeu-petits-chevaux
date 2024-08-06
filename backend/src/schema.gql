@@ -1,0 +1,30 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input ContextInputGQL {
+  gameId: UUID!
+  playerId: UUID!
+}
+
+type Pawn {
+  color: String
+  gameId: UUID
+  id: UUID!
+  name: String
+  playerId: UUID
+  position: TrayCase
+}
+
+type Query {
+  listPawns(
+    """default context"""
+    context: ContextInputGQL!
+  ): [Pawn!]!
+}
+
+"""Represents a traycase"""
+scalar TrayCase
+
+"""Represents a UUID v4"""
+scalar UUID
